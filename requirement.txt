@@ -2,3 +2,4 @@ Python
 flask
 joblib
 twilio
+pip install -U scikit-learn
