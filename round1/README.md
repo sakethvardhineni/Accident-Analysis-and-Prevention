@@ -23,5 +23,3 @@
   * From the above output, copy the URL address and open it in web browser.
   * Fill out the required fields and get the **Analysis of the Road Side Accident**.
    
-      * sub
-      * gh
