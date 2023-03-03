@@ -18,8 +18,10 @@
   * Navigate to source code ```cd /path/to/source/code/mlmodel.py```
   * Train the data using the mlmodel.py using below command.  
       ```python mlmodel.py```
-  * Then run launch the web application using the main.py.
+  * Then launch the web application using the main.py.
       ```python main.py```
-  * th
+  * From the above output, copy the URL address and open it in web browser.
+  * Fill out the required fields and get the analysis of the Road Side Acceident
+   
       * sub
       * gh
