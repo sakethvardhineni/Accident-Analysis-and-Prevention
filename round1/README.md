@@ -4,6 +4,7 @@
   2. Visual Studio Code   
   3. Python
   4. Git
+  5. Docker(Optional)
     
 ## Adopted libraries  
   1. pip
