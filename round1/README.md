@@ -32,8 +32,4 @@
  python main.py
  ```  
  ## Issues experiencing and Solutions  
-  So far, there are no issues, but  we have preprocessed the dataset and splited the data into test data and training data , we are using 
-  
-  
-  
-  (are still training the data to predict the results. Also, the frontend part is not yet complete; we still need to add the CSS and a few dependencies. Also, once this environment is done, we are trying to implement it on Docker by building the image from this setup and hosting it on a server as a Docker container.)
+  So far, there are no issues, but  we have preprocessed the dataset and splited the data into test data and training data , we are creating a ml model so that we can train the model and predict the result.. Also, the frontend part is not yet complete; we still need to add the CSS and a few dependencies. Also, once this environment is done, we are trying to implement it on Docker by building the image from this setup and hosting it on a server as a Docker container.
