@@ -3,3 +3,9 @@ pip install -U scikit-learn scipy matplotlib
 https://stackoverflow.com/questions/46113732/modulenotfounderror-no-module-named-sklearn
 
 pip install -U scikit-learn scipy matplotlib
+
+
+
+python on ec2
+https://towardsdatascience.com/deploying-a-python-web-app-on-aws-57ed772b2319
+
