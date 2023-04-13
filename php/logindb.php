@@ -1,13 +1,11 @@
 <?php
-$user = "anvesh";
-$password = "anvesh123";
-$database = "nsdb";
 
+$host="localhost";
 $username="anvesh";
 $password="anvesh123";
 $db_name="nsdb";
 $tbl_name="login";
-$conn = mysql_connect("$host", "username", "$password")or die("cannot connect");
+$conn = mysql_connect("$host", "$username", "$password")or die("cannot connect");
 mysql_select_db("$db_name")or die("cannot select DB");
 $myusername=$_POST[ 'usr'];
 $mypassword=$_POST['pwd'];
