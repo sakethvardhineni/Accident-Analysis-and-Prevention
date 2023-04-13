@@ -52,3 +52,9 @@ Edit : As @isapir has pointed out, for Fedora version>=22 use the DNF package ma
 ```
 dnf install openssl-devel 
 ```
+
+### error: make: *** [Makefile:930: ossec-maild] Error 1
+reference: https://github.com/ossec/ossec-hids/issues/2039  
+```
+apt install -y libsystemd-dev  
+```
