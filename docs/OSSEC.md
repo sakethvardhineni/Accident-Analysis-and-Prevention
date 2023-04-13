@@ -2,6 +2,32 @@
 Reference: https://www.rapid7.com/blog/post/2017/06/30/how-to-install-and-configure-ossec-on-ubuntu-linux/  
 Latest versions: https://github.com/ossec/ossec-hids/branches/all  
 
+## Error  
+```
+root@ip-172-31-37-103:/var/www/html# apt-get install build-essential gcc make apache2 libapache2-mod-php7.0 php7.0 php7.0-cli php7.0-common apache2-utils unzip wget sendmail inotify-tools -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'php7.0-thrift' for regex 'php7.0'
+Note, selecting 'php7.0-common' for regex 'php7.0'
+Note, selecting 'php7.0-curl' for regex 'php7.0'
+Package php7.0-common is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Unable to locate package libapache2-mod-php7.0
+E: Couldn't find any package by glob 'libapache2-mod-php7.0'
+E: Couldn't find any package by regex 'libapache2-mod-php7.0'
+E: Unable to locate package php7.0-cli
+E: Couldn't find any package by glob 'php7.0-cli'
+E: Couldn't find any package by regex 'php7.0-cli'
+E: Package 'php7.0-common' has no installation candidate
+```
+### Answer  
+https://stackoverflow.com/questions/38815245/unable-to-locate-package-libapache2-mod-php7
+
+
+
 ### To Fix: Build fails because of missing pcre2-10.32  
 I was able to update from ossec 2.9.x to 3.3.0 on ubuntu 18.04 -- the two new packages I had to install were libpcre2-dev and zlib1g-dev. Specifically, this is what worked for me:
 ```
