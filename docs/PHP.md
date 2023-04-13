@@ -6,8 +6,8 @@ DATABASE:
 List: ```SHOW DATABASES;```  
 Use: ```use databsename;```
 
-``
-create table login (name varchar(30), password varchar(30));  
+```
+create table login (name varchar(30), password varchar(30));   
 show tables;
 insert into login values("manasa", "manasa123");  
 insert into login values("saran", "saran123");  
