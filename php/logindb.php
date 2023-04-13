@@ -1,17 +1,30 @@
-[shost="localhost";
-Susername="root";
-§password="lokkesh";
-Sob_name="ssndb";
-Stbl_name="login";
-Sconn = mysql_connect("Shost", "username", "Spassword")or die("cannot connect");
+<?php
+$user = "anvesh";
+$password = "anvesh123";
+$database = "nsdb";
+
+$username="anvesh";
+$password="anvesh123";
+$db_name="nsdb";
+$tbl_name="login";
+$conn = mysql_connect("$host", "username", "$password")or die("cannot connect");
 mysql_select_db("$db_name")or die("cannot select DB");
-Smyusername=$_POST[ 'usr'];
-Smypassword=$_POST['pwd'];
-Smyusername = stripslashes(Smyusername);
-$mypassword = stripslashes (Smypassword);
-Smyusername = mysql_real_escape_string($myusername);
-Smypassword = mysql_real_escape_string($mypassword);
-Ssql="update Stbl_name set passwd='$mypassword' WHERE name= 'Smyusername'";
-Sresult=mysql_query($sql, $conn);
-Scount=mysql_num_rows(Sresult);
+$myusername=$_POST[ 'usr'];
+$mypassword=$_POST['pwd'];
+$myusername = stripslashes($myusername);
+$mypassword = stripslashes ($mypassword);
+$myusername = mysql_real_escape_string($myusername);
+$mypassword = mysql_real_escape_string($mypassword);
+
+$sql="select * from $tbl_name where password='$mypassword' AND name='$myusername'";
+$result=mysql_query($sql,$conn);
+$count=mysql_num_rows($result);
+if ($count == 1)
+{
+  echo ":) :) LOGIN SUCCESS :) :) ";
+}
+else
+{
+echo ": ( : ( AUTHETICATION FAILURE : ( : ( " ;
+}
 ?>
