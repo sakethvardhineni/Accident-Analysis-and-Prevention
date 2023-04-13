@@ -41,7 +41,7 @@ To fix this problem, you have to install OpenSSL development package, which is a
 
 To install OpenSSL development package on Debian, Ubuntu or their derivatives:  
 ```
-$ sudo apt-get install libssl-dev.  
+$ sudo apt-get install libssl-dev  
 ```
 
 To install OpenSSL development package on Fedora, CentOS or RHEL:  
@@ -50,5 +50,5 @@ $ sudo yum install openssl-devel
 ```
 Edit : As @isapir has pointed out, for Fedora version>=22 use the DNF package manager :
 ```
-dnf install openssl-devel. 
+dnf install openssl-devel 
 ```
