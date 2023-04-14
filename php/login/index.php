@@ -4,7 +4,7 @@ include "config.php";
 
 if(isset($_POST['but_submit'])){
 
-    $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);
+    $uname = $_POST['txt_uname'];
     $password = mysqli_real_escape_string($con,$_POST['txt_pwd']);
 
 
@@ -45,10 +45,10 @@ if(isset($_POST['but_submit'])){
                     </div>
                     <div>
                         <input type="submit" value="Submit" name="but_submit" id="but_submit" />
+                        <a href="http://3.134.80.203/signup.php">Sign UP</a>
                     </div>
                 </div>
             </form>
         </div>
     </body>
 </html>
-
