@@ -16,7 +16,7 @@ if(isset($_POST['but_logout'])){
 <html>
     <head></head>
     <body>
-        <h1>Homepage</h1>
+        <a href="http://3.139.62.29:5000/">Visit Our Website NS Group III!</a>
         <form method='post' action="">
             <input type="submit" value="Logout" name="but_logout">
         </form>
