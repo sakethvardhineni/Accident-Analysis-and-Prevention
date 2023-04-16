@@ -1,13 +1,13 @@
 # Accident Analysis And Prevention
 ## Required Environment
-  Operating System: Ubuntu 22.04, Linux Amazon 2023​  
-  Programming Languages: Python, PHP, ShellScript, HTML, CSS​  
-  Database: MySQL​  
-  Packages: Numpy, matplotlib, Pandas, joblib, flask​  
-  Software Requirements: Splunk, Splunk Global Forwarder, and OSSEC.​  
-  Other tools: Git bash​  
-  Editor: Visual Studio Code​  
-  Code Management: Github​  
+  **Operating System**: Ubuntu 22.04, Linux Amazon 2023​  
+  **Programming Languages**: Python, PHP, ShellScript, HTML, CSS​  
+  **Database**: MySQL​  
+  **Packages**: Numpy, matplotlib, Pandas, joblib, flask​  
+  **Software Requirements**: Splunk, Splunk Global Forwarder, and OSSEC.​  
+  **Other tools**: Git bash​  
+  **Editor**: Visual Studio Code​  
+  **Code Management**: Github​  
     
 ## Adopted libraries  
   1. pip
