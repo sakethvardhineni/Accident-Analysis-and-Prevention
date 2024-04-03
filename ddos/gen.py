@@ -3,7 +3,8 @@ from __future__ import print_function
 import requests
 import re
 import time
-import random
+import secrets
+
 try:
     import config
 except ImportError:
@@ -145,11 +146,11 @@ def recursive_browse(url, depth):
             return
 
         # sleep and then recursively browse
-        sleep_time = random.randrange(config.MIN_WAIT, config.MAX_WAIT)
+        sleep_time = secrets.SystemRandom().randrange(config.MIN_WAIT, config.MAX_WAIT)
         debug_print("  Pausing for {} seconds...".format(sleep_time))
         time.sleep(sleep_time)
 
-        recursive_browse(random.choice(valid_links), depth - 1)
+        recursive_browse(secrets.SystemRandom().choice(valid_links), depth - 1)
 
 
 if __name__ == "__main__":
@@ -173,8 +174,8 @@ if __name__ == "__main__":
         debug_print("Randomly selecting one of {} Root URLs".format(
             len(config.ROOT_URLS)), Colors.PURPLE)
 
-        random_url = random.choice(config.ROOT_URLS)
-        depth = random.choice(range(config.MIN_DEPTH, config.MAX_DEPTH))
+        random_url = secrets.SystemRandom().choice(config.ROOT_URLS)
+        depth = secrets.SystemRandom().choice(range(config.MIN_DEPTH, config.MAX_DEPTH))
 
         recursive_browse(random_url, depth)
 
